@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- buat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lora:wght@400..700&display=swap" rel="stylesheet">
+    
+    <!-- buat free icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Jesslyn's Portfolio</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <!-- left side of containes -->
+            <div class="branding">
+                <!-- Blinking Eye animation -->
+                <img id="blinking-eye" src="../assets/blinking_eye.png" alt="Blinking Eye" class="eye">
+            </div>
+
+
+            <!-- navbar -->
+            <nav>
+                <h3 id="home"><a href="index.html">Home</a></h3>
+                <h3><a href="#aboutme">About</a></h3>
+                <h3 id="projects"><a href="projects.html">Projects</a></h3>
+                <h3><a href="#contact">Contact</a></h3>
+            </nav>
+
+            <!-- social media -->
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/jesslyn-abigail/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                <a href="https://www.instagram.com/jesslynabigaill" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+                <a href="https://github.com/nyxuuo" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <!-- dark mode/bright mode toggle -->
+                <!-- <button id="dark-mode"><img id="dark-icon" src="../Assets/sun.png" alt="light"></button> MASIH FIX -->
+            </div>
+        </div>
+     </header>
+
+  
+    <!-- Homepage-->
+    <section class="hero">
+        <div class="hero-text">
+            <h2 class="intro">Hi, I'm <span class="name">Jesslyn</span>!</h2>
+            <h3>& i'm really glad to meet you :)</h3>
+            
+            <!-- skills -->
+            <div class="skills-header">
+                <span>Front-End</span>
+                <span>UI/UX Design</span>
+                <span>Machine Learning</span>
+            </div>
+
+            <!-- cek cv -->
+            <a href="https://drive.google.com/file/d/1O7i89siVk-VbhlQDwWeyeXk5aImRKr8_/view?usp=sharing" class="cv-button" target="_blank">View CV</a>
+        </div>
+
+        <div class="hero-photo">
+            <img src="../assets/myphoto.jpeg" alt="My Picture">
+        </div>
+
+
+    </section>
+
+    <!--about -->
+    <section class="about">
+        <div class="about-header" id="aboutme">
+            <h2>About me</h2>
+            <img id="hero-illust" src="../assets/hero_illust.png" alt="Illustration Smile" class="illust">
+            
+        </div>
+        <p>
+            I’m a passionate Computer Science undergraduate with experience in web development and UI/UX design, 
+            and I’m currently expanding my knowledge in machine learning.
+            <br><br>
+            Outside of my studies, I enjoy illustrating in which I also contribute to organizational activities!
+        </p>
+        
+        <h3 id="skill-title">Skills</h3>
+        <div class="skills">
+            <!-- hard skills -->
+
+            <div class="skill">
+                <span>HTML</span>
+                <i class="devicon-html5-plain colored"></i>
+    
+            </div>
+
+            <div class="skill">
+                <span>CSS</span>
+                <i class="devicon-css3-plain colored"></i>
+            </div>
+
+            <div class="skill">
+                <span>Javascript</span>
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+
+            <div class="skill">
+                <span>Python</span>
+                <i class="devicon-python-plain colored"></i>
+            </div>
+
+            <div class="skill">
+                <span>Figma</span>
+                <!-- progress bar -->
+                <i class="devicon-figma-plain colored"></i>
+            </div>
+
+            <div class="skill">
+                <span>C</span>
+                <i class="devicon-c-plain colored"></i>
+            </div>
+
+                
+                <!-- <div class="skill">
+                    <span>English</span>
+                    
+                    <div class="bar"><div class="progress english"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>Japanese</span>
+              
+                    <div class="bar"><div class="progress japanese"></div></div>
+                </div>
+
+            </div> -->
+
+
+            <!-- <div class="skills soft-skills">
+                <h3>Soft skills</h3>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!-- projects -->
+    <section class="projects-overview">
+        <h2>My Projects - Overview</h2>
+        <div class="project-grid">
+            <!-- project 1 -->
+            <a href="projects.html#modal1" class="project-card"> <!--ini buat redirect ke projects-->
+                <img src="../assets/project1.PNG" alt="Project1">
+                <h3>March Flower, April Showers: You Were Gone by the Summer's</h3>
+            </a>
+            <!-- <div class="project-card">Jenius Academy</div> -->
+
+            <!-- project 2 -->
+            <a href="projects.html#modal2" class="project-card"> <!--ini buat redirect ke projects-->
+                <img src="../assets/project2.PNG" alt="Project2">
+                <h3>Jenius Academy</h3>
+                
+            </a>
+
+            <!-- project 3 -->
+            <a href="projects.html#modal3" class="project-card"> <!--ini buat redirect ke projects-->
+                <img src="../assets/project3.PNG" alt="Project3">
+                <h3>Webtoon Recommendation System</h3>
+            </a>
+
+            <!-- project 4 -->
+            <a href="projects.html#modal4" class="project-card"> <!--ini buat redirect ke projects-->
+                <img src="../assets/project4.jpeG" alt="Project4">
+                <h3>Hate Speech Detector</h3>
+            </a>
+
+            <!-- project 5 -->
+            <a href="projects.html#modal5" class="project-card"> <!--ini buat redirect ke projects-->
+                <img src="../assets/project5.png" alt="Project5">
+                <h3> GetItDone</h3>
+            </a>
+
+            <!-- project 6 -->
+            <a href="projects.html#modal6" class="project-card"> <!--ini buat redirect ke projects-->
+                <img src="../assets/project6.png" alt="Project6">
+                <h3> S2S - Sign to Speech, Speech to Sign</h3>
+            </a>
+
+            <!-- project 7 -->
+            <a href="projects.html#modal7" class="project-card"> <!--ini buat redirect ke projects-->
+                <img src="../assets/project7.png" alt="Project7">
+                <h3> HeAIltee</h3>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="contact">
+        <div class="footer-socials">
+            <!-- gmail -->
+            <a href="mailto:j3sslyna@gmail.com" target="_blank" class="social-icon" title="email">
+                <i class="fa-solid fa-envelope"></i>
+                </i>
+            </a>
+
+            <!-- whatsapp -->
+            <a href="https://wa.me/62895384901996" target="_blank" class="social-icon" title="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                </i>
+            </a>
+            <!-- line -->
+            <a href="https://line.me/ti/p/~abigailjess" target="_blank" class="social-icon" title="line">
+                <i class="fa-brands fa-line"></i>
+                </i>
+            </a>
+
+        </div>
+
+        <!-- copyright -->
+        <p class="copyright">© 2025 Jesslyn Abigail. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../javascript/home.js"></script> 
+
+</body>
+</html>

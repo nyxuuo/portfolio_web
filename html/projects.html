@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- buat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- buat free icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/projects.css">
+    <title>Jesslyn's Portfolio</title>
+</head>
+
+
+<body>
+     <!-- header -->
+    <header>
+        <div class="container">
+            <!-- left side of containes -->
+            <div class="branding">
+                <!-- Blinking Eye animation -->
+                <img id="blinking-eye" src="../assets/blinking_eye.png" alt="Blinking Eye" class="eye">
+            </div>
+
+
+            <!-- navbar -->
+            <nav>
+                <h3 id="home"><a href="index.html">Home</a></h3>
+                <h3><a href="index.html#aboutme">About</a></h3>
+                <h3 id="projects"><a href="projects.html">Projects</a></h3>
+                <h3><a href="#contact">Contact</a></h3>
+            </nav>
+
+            <!-- social media -->
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/jesslyn-abigail/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                <a href="https://www.instagram.com/jesslynabigaill" target="_blank"><i class="fa-brands fa-instagram" ></i></a>
+                <a href="https://github.com/nyxuuo" target="_blank"><i class="fa-brands fa-github" ></i></a>
+                <!-- dark mode/bright mode toggle -->
+                <!-- <button id="dark-mode"><img id="dark-icon" src="../Assets/sun.png" alt="light"></button> MASIH FIX -->
+            </div>
+        </div>
+    </header>
+
+     <!-- projects details -->
+    <section class="projects">
+        <h1>All Projects</h1>
+        <div class="project-grid">
+            <!-- project 1 overview-->
+            <div class="project-card" onclick="openModal('modal1')">
+                <img src="../assets/project1.PNG" alt="Project 1">
+                <h3>March Flower, April Showers:
+                    <br>
+                    You Were Gone by the Summer's
+                </h3>
+                <p>A visual novel game regarding mental health, made by a team of five as the final project for our Software Engineering course.</p>
+            </div>
+
+            <!-- project 2 overview -->
+            <div class="project-card" onclick="openModal('modal2')">
+                <img src="../assets/project2.PNG" alt="Project 2">
+                <h3>Jenius Academy</h3>
+                <p>User-friendly website to support online education, implementing front-end development
+                   using HTML, CSS, Javascript, and Figma.     
+                </p>
+            </div>
+
+            <!-- project 3 overview -->
+            <div class="project-card" onclick="openModal('modal3')">
+                <img src="../assets/project3.PNG" alt="Project 3">
+                <h3>Webtoon Recommendation System</h3>
+                <p>Machine learning project using adaptive hybrid model with LightFM & Sentence-BERT, and Next.js as the front end for a webtoon recommendation system based on user's preferences.
+                 
+                </p>
+            </div>
+
+
+            <!-- project 4 overview -->
+            <div class="project-card" onclick="openModal('modal4')">
+                <img src="../assets/project4.jpeg" alt="Project 4">
+                <h3>Hate Speech Detector</h3>
+                <p>               
+                    A website using Next.js and Python, implementing NLP (TF-IDF + Multinomial NB) to detect hate speech from user input.  
+                </p>
+            </div>
+
+
+            <!-- project 5 overview -->
+            <div class="project-card" onclick="openModal('modal5')">
+                <img src="../assets/project5.PNG" alt="Project 5">
+                <h3>GetItDone</h3>
+                <p>UI/UX project made by a group of three for Find IT! Competition.  
+                </p>
+            </div>
+
+            <!-- project 6 overview -->
+            <div class="project-card" onclick="openModal('modal6')">
+                <img src="../assets/project6.PNG" alt="Project 6">
+                <h3> S2S - Sign to Speech, Speech to Sign</h3>
+                <p>UI/UX project made by a group of three for Find IT! Competition.  
+                </p>
+            </div>
+
+            <!-- project 7 overview -->
+            <div class="project-card" onclick="openModal('modal7')">
+                <img src="../assets/project7.PNG" alt="Project 7">
+                <h3>HeAIltee</h3>
+                <p>
+                    University AI project to predict BMI from images using image preprocessing and a basic AI model.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MODAL PROJECT 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>March Flower, April Showers:
+                <br>
+                You Were Gone by the Summer's
+            </h2>
+            <p> For our Software Engineering Final Project, my team and I created a Visual Novel game centered on a young girl's emotional struggles with loss. Players navigate her journey by making key decisions, will she seek help or bury her feelings? 
+                <br> <br>
+                The game was developed using the <b>Ren'Py</b> engine, with custom assets like UI and illustrations created in <b>Figma, Canva, Medibang Paint, and Procreate</b>.
+            </p>
+            <a href="https://akhina.itch.io/march-flowers-april-showers" target="_blank">Click to see project</a>
+        </div>
+    </div>
+
+
+    <!-- MODAL PROJECT 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2> Jenius Academy
+            </h2>
+            <p>JeniusAcademy is a user-friendly educational website I built with <b>Figma, HTML, CSS, and JavaScript</b>, showcasing my skills in front-end development and user-centered design.
+
+            </p>
+            <a href="https://github.com/nyxuuo/HCI-Lab" target="_blank">Click to see project</a>
+        </div>
+    </div>
+
+    <!-- MODAL PROJECT 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2> Webtoon Recommendation System
+            </h2>
+            <p>This group project was made by a team of 3 for our Machine Learning course. As the name says, It's a web application that provides personalized recommendations by using an <b>adaptive hybrid model with LightFM and Sentence-BERT.</b>
+                <br><br>
+                We developed the application using <b>Python and Next.js</b> frameork for the frontend.
+
+            </p>
+            <a href="https://github.com/Hinakhina/Webtoon-Recommendation-Website-ML-Project" target="_blank">Click to see project</a>
+        </div>
+    </div>
+
+    <!-- MODAL PROJECT 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2> Hate Speech Detector </h2>
+            <p>
+                Sentrimetric is a project that detects hate speech in user input using <b>Natural Language Processing</b>. It processes text data with TF-IDF features, 
+                trains a Multinomial Naive Bayes model, and displays results in a web interface built with <b>Next.js</b>.
+
+            </p>
+            <a href="https://github.com/DarwinJohan/sentrimetric" target="_blank">Click to  see project</a>
+        </div>
+    </div>
+
+
+    <!-- MODAL PROJECT 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2> GetItDone </h2>
+            <p> 
+                GetItDone is a user-friendly task and schedule management app designed to help people stay organized. 
+                GetItDone simplifies your daily to-do lists and helps you manage your time effectively, making it easy to use, prioritize, 
+                and complete tasks, ultimately boosting productivity and reducing stress.
+            </p>
+            <a href="https://www.figma.com/proto/AQaMFeSv34Jz8zSLLMC9nB/mendadak-findit?node-id=0-1&t=KgmrsfNY7U1aJHDK-1" target="_blank">Click to see project</a>
+        </div>
+    </div>
+
+    <!-- MODAL PROJECT 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2> S2S - Sign to Speech, Speech to Sign </h2>
+            <p> 
+                A concept app to help people who have hearing impairments to communicate. It turns speech into sign language and sign language into speech using computer vision and speech recognition.
+                <br>
+                Made by a team of 5 for Microsoft Hackathon 2024, and this project reached the <b>Top 10 Finalists</b>. As of now, we only have the prototype in Figma, and will consider full development.
+            </p>
+            <a href="https://www.figma.com/proto/AQaMFeSv34Jz8zSLLMC9nB/mendadak-findit?node-id=0-1&t=KgmrsfNY7U1aJHDK-1" target="_blank">Click to see project</a>
+        </div>
+    </div>
+
+    <!-- MODAL PROJECT 7 -->
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2> HeAIltee</h2>
+            <p> 
+                Simple BMI prediction using image preprocessing. The goal is to predict Body Mass Index (BMI) from images using preprocessing and a trained model.
+                The datasets used are very little, and was collected manually.
+            </p>
+            <a href="https://github.com/nyxuuo/S2S-Sign-to-Speech" target="_blank">Click to see project</a>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="contact">
+        <div class="footer-socials">
+            <!-- gmail -->
+            <a href="mailto:j3sslyna@gmail.com" class="social-icon" title="email" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                </i>
+            </a>
+
+            <!-- whatsapp -->
+            <a href="https://wa.me/62895384901996" class="social-icon" title="whatsapp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                </i>
+            </a>
+            <!-- line -->
+            <a href="https://line.me/ti/p/~abigailjess" class="social-icon" title="line" target="_blank">
+                <i class="fa-brands fa-line"></i>
+                </i>
+            </a>
+
+        </div>
+
+        <!-- copyright -->
+        <p class="copyright">© 2025 Jesslyn Abigail. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../javascript/projects.js"></script> 
+
+</body>
+</html>

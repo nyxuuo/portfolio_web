@@ -1,0 +1,388 @@
+body{
+    margin: 0;
+    padding-top: 80px;
+    background: linear-gradient(
+        to bottom,
+        rgba(254, 250, 235, 0.95) 30%, /* lighter */
+        rgba(62, 60, 97, 0.85) 100%
+    ),
+    url("../assets/tartan.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto;
+    background-position: center, bottom;
+}
+
+
+header { 
+    position:fixed;
+    top: 0;   
+    left: 0;
+    z-index: 999;  
+    padding-bottom: 20px 0;
+    width: 100%;
+    background-color: #3e3c61;
+    background-image: url('../assets/tartan_blue.jpg');
+    background-repeat: repeat;
+    background-blend-mode: darken;
+    background-size: 100px 100px;
+    background-color: #FDF8E2;
+    opacity: 0.95;
+}
+@import url('https://fonts.googleapis.com/css?family=Cutive Mono');
+@import url('https://fonts.googleapis.com/css2?family=Lora');
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    /* background-color: #504E76; */
+
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .branding{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img.eye {
+    /* position: static;
+    transform: none; */
+    width: 80px;
+    height: auto;
+    padding: 0.5rem;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 10px; /* Space between nav items */
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #C4C3E3;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    display: inline-block;
+
+    /* effects */
+    background:transparent;
+    border-radius: 8px;
+    transition: all 0.6s ease;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.6s ease;
+}
+
+nav a:hover::after{
+    width: 100%;
+    background-color: #C4C3E3;
+}
+
+/* untuk efek popupnya */
+nav a:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px rgba;
+    background: rgba(red, green, blue, alpha);
+}
+
+/* untuk SOCIALS */
+
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.socials a {
+    color: #C4C3E3;
+    font-size: 20px;
+    text-decoration: none;
+    /* effects */
+    background:transparent;
+    border-radius: 8px;
+    transition: all 0.6s ease;
+}
+
+/* effects */
+.socials a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.6s ease;
+}
+
+
+/* untuk efek popupnya */
+.socials a:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px rgba;
+    background: rgba(red, green, blue, alpha);
+}
+
+.about-header img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #0d0c1e;
+    margin-bottom: 20x;
+}
+
+
+/* PROJECT */
+.projects{
+    font-family: kode mono, monospace;
+    /* text-decoration: underline; */
+    padding: 60px 10%;
+}
+
+.projects h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #112250;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.projects h3{
+    text-align: center;
+    text-decoration: underline;
+    position: relative;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: linear-gradient(180deg, #fdf8e2, #E0C58F);
+    padding: 15px;
+    color: #3c507d;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.project-card h3, p {
+    margin-top: 10px;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #9a9757;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #f5f0e9;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    font-family: kodemono, monospace;
+    line-height: 1.5;
+    color: #3e3c61;
+}
+
+.modal a{
+    /* text-decoration: ; */
+    color: #3e3c61;
+
+}
+
+.close {
+    color: #3e3c61;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+
+
+
+/* footerrrrrr */
+footer{
+    background-color: #3e3c61;
+    background-image: url('../assets/tartan_blue.jpg');
+    background-repeat: repeat;
+    background-blend-mode: darken;
+    background-size: 100%;
+    background-size: 100px 100px;
+    background-color: #FDF8E2;
+    opacity: 0.9;
+
+    padding: 50px;
+    min-height: 50px;
+    color: #3c507d;
+    text-align: center;
+
+}
+
+/* container icon */
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    background-color: #E0C58F;
+    color: #112250;
+    font-size: 30px;
+    text-decoration: none;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.social-icon:hover{
+    background-color: #E0C58F;
+    transform: translateY(-10px);
+}
+
+.copyright{
+    font-size: 0.9rem;
+    color: #E0C58F;
+    margin-top: 40px;
+    font-family: kode mono, monospace;
+}
+
+
+
+
+
+
+/* DARK MODODEEEEEEEEEE */
+
+
+#dark-mode {
+    background-color: transparent;
+    border: none;
+    color: #140e82;
+    font-size: xx-small;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#dark-mode img {
+    width: 40px;
+    height: 40px;
+}
+
+#dark-mode:hover {
+    background-color: #C4C3E3;
+    color: #C4C3E3;
+}
+
+
+/* css for dark mode */
+body.dark-mode{
+    background-color: #3e3c61;
+    color: #FDF8E2;
+}
+
+body.dark-mode header {
+    background-color: #F0E7D5;
+}
+
+body.dark-mode nav a {
+    color: #504E76;
+}
+
+body.dark-mode #dark-mode{
+    border-color: #F0E7D5;
+}
+
+body.dark-mode .socials a{
+    color: #504E76;
+
+}
+
+body.dark-mode a:hover::after{
+    width: 100%;
+    background-color: #504E76;
+}
+
+/* effects */
+body.dark-mode .socials a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.6s ease;
+}
+
+
+/* untuk efek popupnya */
+body.dark-mode .socials a:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 4px 8px rgba;
+    background: rgba(red, green, blue, alpha);
+}
