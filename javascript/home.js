@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const eye = document.getElementById("blinking-eye");
 
     function blink() {
-        eye.src = "../Assets/eye_closed.png"; // Change to closed eye
+        eye.src = "../assets/eye_closed.png"; // Change to closed eye
         setTimeout(() => {
-            eye.src = "../Assets/blinking_eye.png"; // Change back to open eye
+            eye.src = "../assets/blinking_eye.png"; // Change back to open eye
         }, 1000); // Eye stays closed for 200ms
     }
 
@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const smile = document.getElementById("hero-illust");
 
     function smiley() {
-        smile.src = "../Assets/hero_illustSmile.png"; // senyum
+        smile.src = "../assets/hero_illustSmile.png"; // senyum
         setTimeout(() => {
-            smile.src = "../Assets/hero_illust.png"; // balik
+            smile.src = "../assets/hero_illust.png"; // balik
         }, 2000); // mulut kebuka
     }
 
@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // toggle icon
         if (darkModeOn){
-            darkIcon.src="../Assets/sun.png";
+            darkIcon.src="../assets/sun.png";
             darkIcon.alt="light";
         }
         else{
-            darkIcon.src="../Assets/moon.png";
+            darkIcon.src="../assets/moon.png";
             darkIcon.alt="dark";
         }
 
