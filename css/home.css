@@ -618,21 +618,45 @@ body.dark-mode .hero {
 }
 
 /* HP */
-/* 
+
 @media (max-width: 600px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:10px;
-  }
+    body{
+        align-items: center;
+    }
 
-  nav a {
-    font-size: 16px;
-    padding: 6px 8px;
-  }
+    nav {
+        /* flex-wrap: wrap; */
+        justify-content: center;
+    }
 
-  .bar {
+    nav a {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    .socials {
+        gap: 8px;
+    }
+
+
+
+    .bar {
     width:100%;
     max-width:15rem;
-  }
-} */
+    }
+
+    .skills-header{
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 10px;
+        display: flex;
+    }
+
+    .skills-header span{
+        text-align: left;
+    }
+
+    .project-card{
+        margin: 0 auto;
+    }
+}
